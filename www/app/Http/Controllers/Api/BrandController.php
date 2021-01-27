@@ -11,7 +11,7 @@ use Illuminate\Http\Request;
 
     public function index()
     {
-        return Brand::all();
+        return Brand::paginate();
     }
 
     public function store(Request $request)
